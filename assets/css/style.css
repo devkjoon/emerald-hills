@@ -1,0 +1,20 @@
+.top-header {
+    background-color: #a76430;
+    height: 20%;
+    width: 100%;
+}
+
+.top-header ul {
+    height: 20%;
+}
+
+.tee-time {
+    padding: auto;
+    margin: auto;
+    color: white;
+    text-decoration: none;
+}
+
+.main-navigation img {
+    height: 3%;
+}

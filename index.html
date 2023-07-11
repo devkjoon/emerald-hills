@@ -4,78 +4,211 @@
     <title>Emerald Hills Golf Club</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="#" class="bi bi-calendar"
-                ><span>Book a Tee Time</span></a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="container-fluid top-header">
+        <ul class="d-flex justify-content-end focus">
+          <li>
+            <span class="vertical-align tee-time-text">
+              <a href="#" class="tee-time vertical-align">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-calendar-range"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9 7a1 1 0 0 1 1-1h5v2h-5a1 1 0 0 1-1-1zM1 9h4a1 1 0 0 1 0 2H1V9z"
+                  />
+                  <path
+                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+                  />
+                </svg>
+                Book a Tee Time
+              </a>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="main-navigation">
+        <nav class="navbar navbar-expand-xl navbar-light navbar-default">
+          <div class="container">
+            <a href="/" class="navbar-brand">
+              <img
+                src="/assets/photos/logo.png"
+                alt="Course Logo"
+                id="course-logo"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#mainNavBar"
+              aria-controls="mainNavBar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavBar">
+              <ul id="links" class="navbar-nav mr-auto ml-auto" tab-index="-1">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="dropdown">
+                  <a
+                    href="#"
+                    class="dropdown-toggle nav-link"
+                    data-toggle="dropdown"
+                    >Golf</a
+                  >
+                  <div class="dropdown-menu">
+                    <a
+                      class="nav-link"
+                      href="https://lakepresidential.ezlinksgolf.com/"
+                      target="_blank"
+                      >Book A Tee Time</a
+                    >
+                    <a class="nav-link" href="/course-overview/"
+                      >Course Overview</a
+                    >
+                    <a class="nav-link" href="/pga-instruction/"
+                      >PGA Instruction</a
+                    >
+                    <a class="nav-link" href="/golf-shop-at-lake-presidential/"
+                      >Golf Shop At Lake Presidential</a
+                    >
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a
+                    href="#"
+                    class="dropdown-toggle nav-link"
+                    data-toggle="dropdown"
+                    >Membership</a
+                  >
+                  <div class="dropdown-menu">
+                    <a class="nav-link" href="/golf-memberships/"
+                      >Golf Memberships</a
+                    >
+                    <a class="nav-link" href="/player-development-program/"
+                      >Player Development Program</a
+                    >
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a
+                    href="#"
+                    class="dropdown-toggle nav-link"
+                    data-toggle="dropdown"
+                    >Outings</a
+                  >
+                  <div class="dropdown-menu">
+                    <a class="nav-link" href="/tournaments-outings/"
+                      >Tournaments &amp; Outings</a
+                    >
+                    <a class="nav-link" href="/request-outing-information/"
+                      >Request Tournaments &amp; Outings Information</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact/">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
-    <div class="container">
-      <h1>My First Bootstrap Page</h1>
-      <p>This is some text.</p>
-    </div>
     <!-- <footer>
       <p>&copy; 2023 Emerald Hills Golf Course . All Rights Reserved.</p>
     </footer> -->
     <footer class="footer">
-        <div class="footer-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-6 text-center text-lg-left">
-                        <address class="footer-content">
-                            <h2 class="h3 footer-header">
-                                Contact Info
-                            </h2>
-                            <p>
-                                <strong>Address:</strong>
-                                " 1234 Emerald Hills Golf Drive"
-                                <br>
-                                " Joon Kim, Developer 22201"
-                            </p>
-                            <p>
-                                <strong>Phone:</strong>
-                                <a href="tel:+1-443-953-1300">(443) 953-1300</a>
-                            </p>
-                            <p>
-                                <strong>Email:</strong>
-                                <a href="mailto:devkjoon@gmail.com">
-                                    <span class="sr-only">email the course at</span>
-                                    devkjoon@gmail.com"
-                                </a>
-                            </p>
-                        </address>
-                    </div>
-                    <div class="col-12 col-lg-6 text-center text-lg-right">
-                        <div class="w-120 mx-auto mr-lg-0">
-                            <a aria-label="View the club's website in a new tab" href="https://devkjoon.netlify.app" target="_blank">
-                                <img class="img-fluid" src="/images/design/GTC_fore-golf-partners-logo-trans-web.png" alt="">
-                            </a>
-                            <a aria-label="View the PGA website in a new tab" target="_blank" href="https://www.pga.com">
-                                <figure class="text-center mt-3">
-                                    <img src="/images/design/GTC_pga-logo-2016-trans-web.png" class="img-fluid" alt="PGA logo">
-                                    <figcaption>Owned and operated by PGA Professionals</figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <div class="footer-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6 text-center text-lg-left">
+              <address class="footer-content">
+                <h2 class="h3 footer-header">Contact Info</h2>
+                <p>
+                  <strong>Address:</strong>
+                  " 1234 Emerald Hills Golf Drive"
+                  <br />
+                  " Joon Kim, Developer 22201"
+                </p>
+                <p>
+                  <strong>Phone:</strong>
+                  <a href="tel:+1-443-953-1300">(443) 953-1300</a>
+                </p>
+                <p>
+                  <strong>Email:</strong>
+                  <a href="mailto:devkjoon@gmail.com">
+                    <span class="sr-only">email the course at</span>
+                    devkjoon@gmail.com"
+                  </a>
+                </p>
+              </address>
             </div>
+            <div class="col-12 col-lg-6 text-center text-lg-right">
+              <div class="w-120 mx-auto mr-lg-0">
+                <a
+                  aria-label="View the club's website in a new tab"
+                  href="https://devkjoon.netlify.app"
+                  target="_blank"
+                >
+                  <img
+                    class="img-fluid"
+                    src="/images/design/GTC_fore-golf-partners-logo-trans-web.png"
+                    alt=""
+                  />
+                </a>
+                <a
+                  aria-label="View the PGA website in a new tab"
+                  target="_blank"
+                  href="https://www.pga.com"
+                >
+                  <figure class="text-center mt-3">
+                    <img
+                      src="/images/design/GTC_pga-logo-2016-trans-web.png"
+                      class="img-fluid"
+                      alt="PGA logo"
+                    />
+                    <figcaption>
+                      Owned and operated by PGA Professionals
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
